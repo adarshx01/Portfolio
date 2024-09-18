@@ -53,14 +53,14 @@ export const MacbookScroll = ({
   const scaleX = useTransform(
     scrollYProgress,
     [0, 0.3],
-    [1.2, isMobile ? 1 : 1.85]
+    [1.2, isMobile ? 6*(window.innerWidth/1920) : 3.2*(window.innerWidth/1920)]
   );
   const scaleY = useTransform(
     scrollYProgress,
     [0, 0.3],
-    [0.6, isMobile ? 1 : 1.5]
+    [0.6, isMobile ? 6*(window.innerWidth/1920) : 2.8*(window.innerWidth/1920)]
   );
-  const translate = useTransform(scrollYProgress, [0, 1], [0, 700]);
+  const translate = useTransform(scrollYProgress, [0, 0.9], [0, 1000]);
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
@@ -68,14 +68,14 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="min-h-[200vh] -my-60 bg-orange-400 flex flex-col items-center py-0 md:py-80 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
+      className="lg:min-h-[180vh] md:min-h-[160vh] min-h-[110vh] -my-60  w-full flex flex-col items-center py-0 md:py-80 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.6] pt-14 lg:scale-[1.1]"
     >
       <motion.h2
         style={{
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="dark:text-white text-neutral-300 text-3xl font-bold mb-20 text-center"
+        className="dark:text-white  text-neutral-300 text-3xl font-bold mb-20 text-center"
       >
         {title || (
           <span>
@@ -148,8 +148,8 @@ export const Lid = ({
           }}
           className="absolute inset-0 bg-[#010101] rounded-lg flex items-center justify-center"
         >
-          <span className="text-white">
-            <AceternityLogo />
+          <span className="text-white text-6xl ">
+            {/* <AceternityLogo /> */}TechStack
           </span>
         </div>
       </div>
@@ -645,23 +645,23 @@ export const OptionKey = ({ className }: { className: string }) => {
   );
 };
 
-const AceternityLogo = () => {
-  return (
-    <svg
-      width="66"
-      height="65"
-      viewBox="0 0 66 65"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-3 w-3 text-white"
-    >
-      <path
-        d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
-        stroke="currentColor"
-        strokeWidth="15"
-        strokeMiterlimit="3.86874"
-        strokeLinecap="round"
-      />
-    </svg>
-  );
-};
+// const AceternityLogo = () => {
+//   return (
+//     <svg
+//       width="66"
+//       height="65"
+//       viewBox="0 0 66 65"
+//       fill="none"
+//       xmlns="http://www.w3.org/2000/svg"
+//       className="h-3 w-3 text-white"
+//     >
+//       <path
+//         d="M8 8.05571C8 8.05571 54.9009 18.1782 57.8687 30.062C60.8365 41.9458 9.05432 57.4696 9.05432 57.4696"
+//         stroke="currentColor"
+//         strokeWidth="15"
+//         strokeMiterlimit="3.86874"
+//         strokeLinecap="round"
+//       />
+//     </svg>
+//   );
+// };

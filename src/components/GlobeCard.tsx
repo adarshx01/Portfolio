@@ -14,28 +14,6 @@ const World = dynamic(() => import("C:/Users/Adarsh Vishwakarma/Documents/Web-Pr
 export default function GlobeCard() {
 
 
-  const [formData, setFormData] = React.useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-
-  const HandleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const HandleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Perform form validation here if needed
-    if (!formData.name || !formData.email || !formData.message) {
-      alert("Please fill out all fields.");
-      return;
-    }
-    // Submit form data
-    const emailBody = `Name: ${formData.name}\nEmail: ${formData.email}\nMessage:\n${formData.message}`;
-    window.location.href = `mailto:vish.adarsh01@gmail.com?subject=Contact Form&body=${emailBody}`;
-  };
-
 
   const globeConfig = {
     pointSize: 4,
@@ -439,48 +417,12 @@ export default function GlobeCard() {
           }}
           className="div mb-10"
         >
-          <h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
-            <Cover className="text-indigo-500 text-8xl">Let's Connect</Cover>
-          </h2>
           <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
             This globe is interactive and customizable. Have fun with it, and
             don&apos;t forget to share it. :)
           </p>
         </motion.div>
         <div className="flex flex-row">
-        <div className="w-[35rem]">
-        <form onSubmit={HandleSubmit} className="space-y-4">
-      <Input
-        type="text"
-        name="name"
-        value={formData.name}
-        onChange={HandleChange}
-        className="lg:w-[36rem] sm:w-[20.5rem] m-auto mb-3 relative pl-4 h-10 flex"
-        placeholder="Name"
-        required
-      />
-      <Input
-        type="email"
-        name="email"
-        value={formData.email}
-        onChange={HandleChange}
-        className="lg:w-[36rem] sm:w-[20.5rem] m-auto mb-3 h-10 pl-4 flex"
-        placeholder="Email"
-        required
-      />
-      <textarea
-        name="message"
-        value={formData.message}
-        onChange={HandleChange}
-        className="lg:w-[36rem] sm:w-[20.5rem] m-auto h-60 pl-4 pb-48 flex rounded-md border border-gray-300"
-        placeholder="Say hello!"
-        required
-      />
-      <Button type="submit" className="text-2xl ml-4">
-        <Cover>Send🚀</Cover> 
-      </Button>
-    </form>
-        </div>
       <div>
         
         <div className="absolute w-[43rem] pl-32 -bottom-20 h-72 md:h-full z-10">

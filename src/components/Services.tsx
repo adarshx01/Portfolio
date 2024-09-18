@@ -18,7 +18,7 @@ export function ServicesOffered() {
 
   return (
     <div
-      className="h-[400vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
+      className="h-[200vh]   bg-black w-full dark:border dark:border-white/[0.1]  relative lg:pt-20 md:pt-24 pt-44 overflow-clip"
       ref={ref}
     >
       <GoogleGeminiEffect
@@ -29,6 +29,8 @@ export function ServicesOffered() {
           pathLengthFourth,
           pathLengthFifth,
         ]}
+        title="Services Offered"
+        description="Building my own Branding and the next big thing!!"
       />
     </div>
   );

@@ -11,6 +11,8 @@ import {
   IconNewSection,
   IconTerminal2,
 } from "@tabler/icons-react";
+import {Linkedin, Youtube,Mail,User , Wrench } from 'lucide-react'
+
 import Image from "next/image";
 const links = [
   {
@@ -18,56 +20,51 @@ const links = [
     icon: (
       <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "/",
   },
 
   {
-    title: "Products",
+    title: "Resume",
     icon: (
-      <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      <User  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "#about",
+  },
+  {
+    title: "Email",
+    icon: (
+      <Mail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+    ),
+    href: "mailto:vish.adarsh01@gmail.com",
+  },
+  {
+    title: "Skills",
+    icon: (
+      <Wrench className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
     href: "#",
   },
   {
-    title: "Components",
+    title: "Youtube",
     icon: (
-      <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      <Youtube className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
-  },
-  {
-    title: "Aceternity UI",
-    icon: (
-      <Image
-        src="https://assets.aceternity.com/logo-dark.png"
-        width={20}
-        height={20}
-        alt="Aceternity Logo"
-      />
-    ),
-    href: "#",
-  },
-  {
-    title: "Changelog",
-    icon: (
-      <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "#",
+    href: "https://www.youtube.com/@techorbin",
   },
 
   {
-    title: "Twitter",
+    title: "LinkedIn",
     icon: (
-      <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      <Linkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "https://www.linkedin.com/in/adarshx01/",
   },
   {
     title: "GitHub",
     icon: (
       <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "https://www.github.com/adarshx01",
   },
 ];
 const words = [
@@ -84,17 +81,18 @@ const words = [
     className:"text-white"
   },
   {
-    text: "AI-ML models.",
+    text: "AI-ML models",
     className: "text-blue-500 dark:text-blue-500",
   },
 ];
 export function Sparkles() {
   return (
-    <div className="h-[48rem] w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-      <h1 className="md:text-5xl text-1xl lg:text-7xl font-bold text-center text-white relative z-20">
+    <div className="xl:h-[70rem] md:h-[65rem] h-[58rem]  pt-20 w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md ">
+      <h1 className="md:text-5xl text-4xl lg:text-8xl font-bold text-center text-white relative z-20">
         Hi!👋 I'm Adarsh
-        <TypewriterEffectSmooth  words={words}/>
       </h1>
+      
+      <h2 className="md:text-8xl text-6xl lg:text-9xl"><TypewriterEffectSmooth className="text-6xl"  words={words}/></h2>
       <div className="w-[40rem] h-40 relative">
         {/* Gradients */}
         <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm" />
@@ -113,11 +111,15 @@ export function Sparkles() {
         />
 
         {/* Radial Gradient to prevent sharp edges */}
-        <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+        <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(340px_200px_at_top,transparent_20%,white)]"></div>
       </div>
-      <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
-        items={links}/>
+      <div className="lg:mt-28 md:mt-28 ">
+        <FloatingDock
+          mobileClassName="translate-y-20" 
+          desktopClassName=""
+          items={links}
+        />
+      </div>
     </div>
   );
 }

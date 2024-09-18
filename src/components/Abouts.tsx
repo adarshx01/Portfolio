@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
+import { TextHoverEffect } from "./ui/text-hover-effect";
 
 export function Abouts() {
   const data = [
@@ -149,6 +150,24 @@ export function Abouts() {
   ];
   return (
     <div className="w-full">
+      <div className="lg:h-[26rem] md:h-[10.5rem] h-[6rem] flex items-center justify-center">
+        <TextHoverEffect text="ABOUT ME" />
+      </div>
+      <div className="flex  lg:max-w-[80%] md:max-w-[90%] max-w-[90%] rounded-xl  md:h-[23rem] lg:h-[30rem] h-[14rem] items-center justify-center mx-auto shadow-2xl shadow-blue-500">
+        <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
+          {/* <h1 className="lg:text-7xl font-normal font-mono md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
+            About me
+
+          </h1> */}
+          <p className="text-neutral-700 dark:text-neutral-300 lg:text-xl md:text-sm text-xs max-w-2xl my-auto">
+          I'm Adarsh Vishwakarma, a tech enthusiast and national-level hackathon winner, pursuing a B.Tech in Computer Science at Cochin University. 
+          I specialize in full-stack development, machine learning, and backend systems, driven by a passion for solving challenges and staying ahead in tech.
+          </p>
+        </div>
+        <div className="max-w-7xl mx-auto my-auto px-4 md:px-8 lg:px-10   w-[30rem]">
+          <img className="w-full bg-transparent mt-12" src="/Adarsh_nobg.png" width={1000} height={1000}></img>
+        </div>
+      </div>
       <Timeline data={data} />
     </div>
   );

@@ -5,12 +5,12 @@ import { Boxes } from "./ui/background-boxes";
 
 export function MacbookScrolldemo() {
   return (
-    <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full ">
+    <div className="overflow-hidden dark:bg-[#0B0B0F] bg-lime-200 w-full ">
       
       <MacbookScroll
         title={
           <span>
-           TechStack. <br /> No kidding.
+           TechStack
           </span>
         }
         badge={
