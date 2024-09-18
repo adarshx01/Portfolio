@@ -3,6 +3,9 @@ import React from "react";
 import { SparklesCore } from "./ui/sparkles";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { FloatingDock } from "./ui/floating-dock";
+import { ChevronRight ,NotepadTextDashed } from "lucide-react"
+ 
+import { Button } from "@/components/ui/button"
 import {
   IconBrandGithub,
   IconBrandX,
@@ -14,6 +17,7 @@ import {
 import {Linkedin, Youtube,Mail,User , Wrench } from 'lucide-react'
 
 import Image from "next/image";
+import Link from "next/link";
 const links = [
   {
     title: "Home",
@@ -113,12 +117,15 @@ export function Sparkles() {
         {/* Radial Gradient to prevent sharp edges */}
         <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(340px_200px_at_top,transparent_20%,white)]"></div>
       </div>
-      <div className="lg:mt-28 md:mt-28 ">
+      <div className="flex flex-col-reverse mx-auto lg:mt-28 md:mt-28 ">
         <FloatingDock
           mobileClassName="translate-y-20" 
           desktopClassName=""
           items={links}
         />
+        <Button variant="outline" size="icon" className=" right-44 mx-auto my-8 w-24  ">
+          <Link href="https://drive.google.com/file/d/1AQuysOpB8o4YYCrdiz0Bavwtv5OZBjYd/view?usp=drive_link" className="flex"><p>Resume</p><ChevronRight className="h-4 w-4 mt-0.5" /></Link>
+        </Button>
       </div>
     </div>
   );
