@@ -1,9 +1,8 @@
 'use client'
-import React,{useState} from "react";
+import React from "react";
 import { Cover } from "@/components/ui/cover";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import GlobeCard from "./GlobeCard";
 export function Contact() {
   
   const [formData, setFormData] = React.useState({
@@ -29,7 +28,7 @@ export function Contact() {
   };
 
   return (
-    <div className="w-full z-99999999">
+    <div id="Contact" className="w-full z-99999999">
       <h2 className="text-center lg:text-8xl md:text-7xl sm:text-3xl font-bold text-black dark:text-white">
         <Cover className="">Let's Connect</Cover>
       </h2>

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { HeroHighlight, Highlight } from "./ui/hero-highlight";
+import { HeroHighlight } from "./ui/hero-highlight";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import Link from "next/link";
 import Image from "next/image";
@@ -42,7 +42,7 @@ const projects = [
 
 export function Project() {
   return (
-    <div className=" bg-gray-100">
+    <div id="Projects" className=" bg-gray-100">
       <HeroHighlight className="h-[50rem]  lg:h-[60rem] md:h-[60rem] sticky top-10">
         
         <motion.h1
@@ -64,13 +64,13 @@ export function Project() {
                   >
                     {project.name}
                   </CardItem>
-                  <CardItem
+                  {/* <CardItem
                     as="p"
                     translateZ="60"
                     className="text-neutral-500 text-sm mt-2 dark:text-neutral-300"
                   >
-                    {/* {project.desc} */}
-                  </CardItem>
+                    {project.desc}
+                  </CardItem> */}
                   <CardItem translateZ="100" className="w-full mt-4">
                     <Image
                       src={project.image}
@@ -88,14 +88,14 @@ export function Project() {
                       target="__blank"
                       className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                     >
-                      Try now →
+                      Link →
                     </CardItem>
                     <CardItem
                       translateZ={20}
                       as="button"
                       className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                     >
-                      Sign up
+                      Details
                     </CardItem>
                   </div>
                 </CardBody>

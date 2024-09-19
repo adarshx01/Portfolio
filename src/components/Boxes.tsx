@@ -1,5 +1,5 @@
 import React from 'react'
-import { BoxesCore,Boxes } from './ui/background-boxes'
+import {Boxes } from './ui/background-boxes'
 
 const BlockBox = () => {
   return (

@@ -149,7 +149,7 @@ export function Abouts() {
     },
   ];
   return (
-    <div className="w-full">
+    <div id="Abouts" className="w-full">
       <div className="lg:h-[26rem] md:h-[10.5rem] h-[6rem] flex items-center justify-center">
         <TextHoverEffect text="ABOUT ME" />
       </div>

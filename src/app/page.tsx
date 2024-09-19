@@ -1,13 +1,8 @@
-import BlockBox from "@/components/Boxes";
-import { FloatingDockDemo } from "@/components/FloatDock";
-import GlobeCard from "@/components/GlobeCard";
+import React from "react";
 import { Project } from "@/components/Project";
-import { HeroParallaxEffect } from "@/components/HeroParallaxEffect";
 import { MacbookScrolldemo } from "@/components/MacBookScroll";
-import { Sparkles, SparklesCore, SparklesPreview } from "@/components/Sparkles";
+import { Sparkles } from "@/components/Sparkles";
 import { TechStack } from "@/components/TechStack";
-import { TracingBeam } from "@/components/ui/tracing-beam";
-import Image from "next/image";
 import { ServicesOffered } from "@/components/Services";
 import { Abouts } from "@/components/Abouts";
 import { Contact } from "@/components/Contact";
@@ -24,7 +19,7 @@ export default function Home() {
     </div>
     <ServicesOffered/>
     <div className="overflow-hidden">
-      <section id="about"><Abouts/></section>
+      <Abouts/>
       {/* <GlobeCard/> */}
       <Contact/>
       <Footer/>

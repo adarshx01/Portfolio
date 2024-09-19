@@ -1,11 +1,7 @@
 'use client'
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-import { Cover } from "./ui/cover";
-import { Textarea } from "./ui/textarea";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
 
 const World = dynamic(() => import("C:/Users/Adarsh Vishwakarma/Documents/Web-Projects/portfolio/src/components/ui/globe").then((m) => m.World), {
   ssr: false,

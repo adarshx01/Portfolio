@@ -3,32 +3,25 @@ import React from "react";
 import { SparklesCore } from "./ui/sparkles";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { FloatingDock } from "./ui/floating-dock";
-import { ChevronRight ,NotepadTextDashed } from "lucide-react"
+import { ChevronRight } from "lucide-react"
  
 import { Button } from "@/components/ui/button"
 import {
   IconBrandGithub,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
 } from "@tabler/icons-react";
 import {Linkedin, Youtube,Mail,User , Wrench } from 'lucide-react'
-
-import Image from "next/image";
 import Link from "next/link";
 const links = [
-  {
-    title: "Home",
-    icon: (
-      <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "/",
-  },
+  // {
+  //   title: "Home",
+  //   icon: (
+  //     <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+  //   ),
+  //   href: "/",
+  // },
 
   {
-    title: "Resume",
+    title: "About",
     icon: (
       <User  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
@@ -46,7 +39,7 @@ const links = [
     icon: (
       <Wrench className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#",
+    href: "#TechStack",
   },
   {
     title: "Youtube",
@@ -91,7 +84,7 @@ const words = [
 ];
 export function Sparkles() {
   return (
-    <div className="xl:h-[70rem] md:h-[65rem] h-[58rem]  pt-20 w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md ">
+    <div id="LandingPage" className="xl:h-[70rem] md:h-[65rem] h-[58rem]  pt-20 w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md ">
       <h1 className="md:text-5xl text-4xl lg:text-8xl font-bold text-center text-white relative z-20">
         Hi!👋 I'm Adarsh
       </h1>
@@ -119,7 +112,7 @@ export function Sparkles() {
       </div>
       <div className="flex flex-col-reverse mx-auto lg:mt-28 md:mt-28 ">
         <FloatingDock
-          mobileClassName="translate-y-20" 
+          // mobileClassName="translate-y-20" 
           desktopClassName=""
           items={links}
         />

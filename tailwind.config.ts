@@ -9,7 +9,7 @@ import type { Config } from "tailwindcss"
 
 const config = {
   darkMode: ["class"],
-  darkMode: "class",
+  // darkMode: "class",
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -99,17 +99,6 @@ const config = {
     require("tailwindcss-animate")],
 } satisfies Config
 
-
-function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
-    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-  );
- 
-  addBase({
-    ":root": newVars,
-  });
-}
 
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));

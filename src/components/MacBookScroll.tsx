@@ -1,7 +1,6 @@
 import React from "react";
 import { MacbookScroll } from "./ui/macbook-scroll";
 import Link from "next/link";
-import { Boxes } from "./ui/background-boxes";
 
 export function MacbookScrolldemo() {
   return (
