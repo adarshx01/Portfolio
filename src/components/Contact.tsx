@@ -29,7 +29,7 @@ export function Contact() {
 
   return (
     <div id="Contact" className="w-full z-99999999">
-      <h2 className="text-center lg:text-8xl md:text-7xl sm:text-3xl font-bold text-black dark:text-white">
+      <h2 className="text-center lg:text-8xl md:text-7xl text-3xl font-bold text-black dark:text-white">
         <Cover className="">Let's Connect</Cover>
       </h2>
      <div className="flex flex-row-reverse mt-20">
