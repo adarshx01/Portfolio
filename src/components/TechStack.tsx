@@ -14,7 +14,7 @@ const Stack = {
   "React.js": "https://reactjs.org",
   "Flask": "https://flask.palletsprojects.com",
   "Firebase": "https://firebase.google.com",
-  "TensorFlow.js": "https://www.tensorflow.org/js",
+  "TF.js": "https://www.tensorflow.org/js",
   "Roboflow": "https://roboflow.com",
   "Mongoose": "https://mongoosejs.com",
   "Express.js": "https://expressjs.com",
