@@ -10,7 +10,7 @@ export function Abouts() {
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Built and launched Aceternity UI and Aceternity UI Pro from scratch
+            Building my Own Custom Brand Page (techorb.in) for tech enthusiasts and developers.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image

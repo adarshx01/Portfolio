@@ -54,21 +54,21 @@ export const GoogleGeminiEffect = ({
 
       <div className="w-full flex-col h-[890px] -top-80 md:-top-40  flex items-center justify-center bg-red-transparent absolute ">
         <div className="">
-          <p className="text-lg md:text-7xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
-            {title || `Build with Aceternity UI`}
-          </p>
           <p className="text-xs md:text-xl font-normal text-center text-neutral-400 my-4 max-w-lg mx-auto">
             {description ||
               `Scroll this component and see the bottom SVG come to life wow this
             works!`}
           </p>
+          <p className="text-lg md:text-7xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
+            {title || `Build with Aceternity UI`}
+          </p>
             <CardSpotlight className="h-fit py-2 w-96 mx-auto mb-24">
               <div className="text-neutral-200 mt-4 relative z-20">
                 <ul className="list-none  mt-2">
-                  <Step title="Enter your email address" />
-                  <Step title="Create a strong password" />
-                  <Step title="Set up two-factor authentication" />
-                  <Step title="Verify your identity" />
+                  <Step title="Build your own AI project." />
+                  <Step title="Get personalised Ai-ML newsletter." />
+                  <Step title="Create shorts & videos for your page." />
+                  <Step title="Get custom webpage for your business." />
                 </ul>
               </div>
             </CardSpotlight>
