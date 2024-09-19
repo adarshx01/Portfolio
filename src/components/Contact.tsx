@@ -23,8 +23,8 @@ export function Contact() {
       return;
     }
     // Submit form data
-    const emailBody = `Name: ${formData.name}\nEmail: ${formData.email}\nMessage:\n${formData.message}`;
-    window.location.href = `mailto:vish.adarsh01@gmail.com?subject=Contact Form&body=${emailBody}`;
+    // const emailBody = `Name: ${formData.name}\nEmail: ${formData.email}\nMessage:\n${formData.message}`;
+    window.location.href = `mailto:vish.adarsh01@gmail.com?subject=Mail from Portfolio Website&body=${formData.message}`;
   };
 
   return (
