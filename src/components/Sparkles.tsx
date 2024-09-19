@@ -34,13 +34,13 @@ const links = [
     ),
     href: "mailto:vish.adarsh01@gmail.com",
   },
-  {
-    title: "Skills",
-    icon: (
-      <Wrench className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-    ),
-    href: "#TechStack",
-  },
+  // {
+  //   title: "Skills",
+  //   icon: (
+  //     <Wrench className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+  //   ),
+  //   href: "#TechStack",
+  // },
   {
     title: "Youtube",
     icon: (

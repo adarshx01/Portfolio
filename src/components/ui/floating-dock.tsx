@@ -175,7 +175,7 @@ function IconContainer({
         onMouseLeave={() => setHovered(false)}
         className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800 flex items-center justify-center relative"
       >
-        <AnimatePresence>
+        <AnimatePresence >
           {hovered && (
             <motion.div
               initial={{ opacity: 0, y: 10, x: "-50%" }}
