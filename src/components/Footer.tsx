@@ -1,6 +1,6 @@
 
 import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons"
-import { MountainIcon, YoutubeIcon } from "lucide-react"
+import { CircuitBoard , YoutubeIcon } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="container max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="flex flex-col gap-4">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
-            <MountainIcon className="h-6 w-6" />
+            <CircuitBoard  className="h-6 w-6" />
             <span className="text-xl font-bold">Adarsh Vishwakarma</span>
           </Link>
           <p className="text-muted-foreground max-w-[300px]">
