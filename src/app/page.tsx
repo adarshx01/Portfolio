@@ -20,7 +20,6 @@ export default function Home() {
     <ServicesOffered/>
     <div className="overflow-hidden">
       <Abouts/>
-      {/* <GlobeCard/> */}
       <Contact/>
       <Footer/>
     </div>

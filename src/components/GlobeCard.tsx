@@ -2,8 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-
-const World = dynamic(() => import("C:/Users/Adarsh Vishwakarma/Documents/Web-Projects/portfolio/src/components/ui/globe").then((m) => m.World), {
+import { Globe } from "@/components/ui/globe";
+const World = dynamic(() => import(Globe).then((m) => m.World), {
   ssr: false,
 });
 
