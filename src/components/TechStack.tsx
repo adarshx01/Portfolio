@@ -20,7 +20,7 @@ const Stack = {
   "Express.js": "https://expressjs.com",
   "Vercel": "https://vercel.com",
   "Supabase": "https://supabase.com",
-  "Hugging Face Transformers": "https://huggingface.co/transformers",
+  "Hugging Face": "https://huggingface.co/transformers",
   "PyTorch": "https://pytorch.org",
   "KindeAuth": "https://kinde.com",
   "Three.js": "https://threejs.org",

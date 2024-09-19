@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect,useState} from "react";
+import React, { useEffect,useState,useRef} from "react";
 import { MotionValue, motion, useScroll, useTransform } from "framer-motion";
 import { cn } from "@/lib/utils";
 import {
@@ -65,12 +65,12 @@ export const MacbookScroll = ({
   const scaleX = useTransform(
     scrollYProgress,
     [0, 0.3],
-    [1.2, isMobile ? 6*(window.innerWidth/1920) : 3.2*(window.innerWidth/1920)]
+    [1.2, isMobile ? 6*(windowWidth/1920) : 3.2*(windowWidth/1920)]
   );
   const scaleY = useTransform(
     scrollYProgress,
     [0, 0.3],
-    [0.6, isMobile ? 6*(window.innerWidth/1920) : 2.8*(window.innerWidth/1920)]
+    [0.6, isMobile ? 6*(windowWidthh/1920) : 2.8*(windowWidth/1920)]
   );
   const translate = useTransform(scrollYProgress, [0, 0.9], [0, 1000]);
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
