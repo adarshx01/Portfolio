@@ -9,32 +9,32 @@ const projects = [
   {
     name: "Argus",
     desc: "Developed a machine learning platform for industrial/construction sites to ensure workers wear proper PPE and alert if systems may fail.",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Example image path
-    deployLink: "https://argus-platform.com",
+    image: "/Argus.png", // Example image path
+    deployLink: "https://argus.vercel.com",
   },
   {
     name: "Fast Fingers",
     desc: "A typing game designed for 'Qwerty Rumble' event during DHISHNA 2023 with multiple levels and Firebase authentication.",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    deployLink: "https://fastfingers-game.com",
+    image: "/Techorb.png",
+    deployLink: "https://qwertyrumble.netlify.app",
   },
   {
     name: "GiftedBooks",
     desc: "Developed a platform where users can resell and buy books, focusing on making books available for underprivileged children.",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    deployLink: "https://giftedbooks.com",
+    image: "/booklearn.png",
+    deployLink: "https://giftedbooks.vercel.app",
   },
   {
     name: "eVillage",
     desc: "A public platform offering free or low-cost computer science education to village students, including a mentorship program.",
     image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    deployLink: "https://evillage-education.com",
+    deployLink: "https://evillage.onrender.com",
   },
   {
     name: "BookLearn",
     desc: "An NLP model that answers questions from pre-trained books to improve reading efficiency, using PyTorch and Hugging Face.",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    deployLink: "https://booklearn-ai.com",
+    image: "/llm.png",
+    deployLink: "https://booklearn.netlify.app",
   },
 ];
 
@@ -60,7 +60,7 @@ export function Project() {
                 <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full rounded-xl p-6 border">
                   <CardItem
                     translateZ="50"
-                    className="text-xl font-bold text-neutral-600 dark:text-white"
+                    className="text-xl font-bold text-neutral-800 dark:text-white"
                   >
                     {project.name}
                   </CardItem>
@@ -72,7 +72,7 @@ export function Project() {
                     {project.desc}
                   </CardItem> */}
                   <CardItem translateZ="100" className="w-full mt-4">
-                    <Image
+                    <img
                       src={project.image}
                       height="200"
                       width="400"
@@ -86,7 +86,7 @@ export function Project() {
                       as={Link}
                       href={project.deployLink}
                       target="__blank"
-                      className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                      className="px-4 py-2 rounded-xl text-xs font-extrabold text-black dark:text-white"
                     >
                       Link →
                     </CardItem>
