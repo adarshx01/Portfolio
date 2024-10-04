@@ -117,7 +117,7 @@ export function Sparkles() {
           items={links}
         />
         <Button variant="outline" size="icon" className=" right-44 mx-auto my-8 w-24  ">
-          <Link href="https://drive.google.com/file/d/1AQuysOpB8o4YYCrdiz0Bavwtv5OZBjYd/view?usp=drive_link" className="flex"><p>Resume</p><ChevronRight className="h-4 w-4 mt-0.5" /></Link>
+          <Link href="https://drive.google.com/file/d/1dy9u8lMSA-6UTSohSHNb3mmjLGzvaRJ2/view?usp=sharing" className="flex"><p>Resume</p><ChevronRight className="h-4 w-4 mt-0.5" /></Link>
         </Button>
       </div>
     </div>
