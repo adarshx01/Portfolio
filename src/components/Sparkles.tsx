@@ -25,7 +25,7 @@ const links = [
     icon: (
       <User  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
-    href: "#about",
+    href: "#Abouts",
   },
   {
     title: "Email",
@@ -116,6 +116,7 @@ export function Sparkles() {
           desktopClassName=""
           items={links}
         />
+        
         <Button variant="outline" size="icon" className=" right-44 mx-auto my-8 w-24  ">
           <Link href="https://drive.google.com/file/d/1mwwralzblzrqYsKYyEcRe6YsW208toS-/view?usp=sharing  " className="flex"><p>Resume</p><ChevronRight className="h-4 w-4 mt-0.5" /></Link>
         </Button>
