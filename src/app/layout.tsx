@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import {Recursive} from "next/font/google"
 import "./globals.css";
-import Head from 'next/head';
 
 
 // const geistSans = localFont({
@@ -29,9 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta name="google-site-verification" content="qeJyPSM_Y9EMoJsyleMcixsWmwRJmMqt05yJelGLERY" />
-      </Head>
+      </head>
       <body
         className={recursive.className}
       >
