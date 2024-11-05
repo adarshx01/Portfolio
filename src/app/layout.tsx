@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification" content="qeJyPSM_Y9EMoJsyleMcixsWmwRJmMqt05yJelGLERY" />
+        <meta name="google-site-verification" content="qeJyPSM_Y9EMoJsyleMcixsWmwRJmMqt05yJelGLERY" /> 
       </head>
       <body
         className={recursive.className}

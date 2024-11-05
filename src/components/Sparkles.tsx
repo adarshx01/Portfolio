@@ -3,13 +3,13 @@ import React from "react";
 import { SparklesCore } from "./ui/sparkles";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { FloatingDock } from "./ui/floating-dock";
-import { ChevronRight } from "lucide-react"
+import { ArrowDown01Icon, ChevronRight } from "lucide-react"
  
 import { Button } from "@/components/ui/button"
 import {
   IconBrandGithub,
 } from "@tabler/icons-react";
-import {Linkedin, Youtube,Mail,User , Wrench } from 'lucide-react'
+import {Linkedin, Youtube,Mail } from 'lucide-react'
 import Link from "next/link";
 const links = [
   // {
@@ -23,7 +23,7 @@ const links = [
   {
     title: "About",
     icon: (
-      <User  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      <ArrowDown01Icon  className="h-full w-full text-neutral-500 dark:text-neutral-300" />
     ),
     href: "#Abouts",
   },
