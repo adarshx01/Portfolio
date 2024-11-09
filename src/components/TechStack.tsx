@@ -24,7 +24,30 @@ const Stack = {
   "PyTorch": "https://pytorch.org",
   "KindeAuth": "https://kinde.com",
   "Three.js": "https://threejs.org",
-  "Azure VMs": "https://azure.microsoft.com/en-us/services/virtual-machines"
+  "Azure VMs": "https://azure.microsoft.com/en-us/services/virtual-machines",
+  "React Native": "https://reactnative.dev/",
+  "Shad-cn": "https://ui.shadcn.com/",
+  "Colab": "https://colab.research.google.com",
+  "Jupyter": "https://jupyter.org",
+  "Keras": "https://keras.io",
+  "Numpy": "https://numpy.org",
+  "Pandas": "https://pandas.pydata.org",
+  "Matplotlib": "https://matplotlib.org",
+  "Seaborn": "https://seaborn.pydata.org",
+  "Scikit-learn": "https://scikit-learn.org",
+  // "OpenCV": "https://opencv.org",
+  // "GCP": "https://cloud.google.com",
+  // "AWS": "https://aws.amazon.com",
+  // "Heroku": "https://www.heroku.com",
+  // "Netlify": "https://www.netlify.com",
+  // "Vite": "https://vitejs.dev",
+  // "Webpack": "https://webpack.js.org",
+  // "Babel": "https://babeljs.io",
+  // "ESLint": "https://eslint.org",
+  // "Prettier": "https://prettier.io",
+  // "Jest": "https://jestjs.io",
+  // "Framer Motion": "https://www.framer.com/motion",
+
 }
 
 export function TechStack() {
