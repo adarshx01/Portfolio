@@ -24,6 +24,7 @@ import { IconCommand } from "@tabler/icons-react";
 import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
 import Image from "next/image";
+import { PerspectiveCamera } from "@react-three/drei";
 
 export const MacbookScroll = ({
   src,
@@ -87,7 +88,7 @@ export const MacbookScroll = ({
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="dark:text-white  text-neutral-300 text-3xl font-bold mb-20 text-center"
+        className="dark:text-white  text-neutral-300 text-6xl font-bold mt-10 mb-10  text-center"
       >
         {title || (
           <span>
@@ -158,10 +159,12 @@ export const Lid = ({
           style={{
             boxShadow: "0px 2px 0px 2px var(--neutral-900) inset",
           }}
-          className="absolute inset-0 bg-[#010101] rounded-lg flex items-center justify-center"
+          className="absolute inset-0 bg-[#010101] rounded-lg flex items-center justify-center "
         >
           <span className="text-white text-6xl ">
-            {/* <AceternityLogo /> */}TechStack
+          <img src="/TechOrb-LOGO.png" width="280" style={{
+          transform: "perspective(700px) rotateX(-29deg) translateZ(0px)"
+        }} />
           </span>
         </div>
       </div>

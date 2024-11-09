@@ -15,7 +15,7 @@ export default function Home() {
       <Sparkles/>
       <MacbookScrolldemo/>
       <TechStack/>
-      <Project/>
+      
     </div>
     <ServicesOffered/>
     <div className="overflow-hidden">

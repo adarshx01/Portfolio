@@ -35,8 +35,8 @@ export function TechStack() {
         {Object.keys(Stack).map((key,index) => (
           <CardSpotlight key={key} className="flex flex-col items-center justify-center p-4 m-1 w-32 h-24">
             
-            {/* <a href={index} target="_blank" rel="noopener noreferrer">
-              {index}
+            {/* <a href={Stack[key]} target="_blank" rel="noopener noreferrer">
+              {key}
             </a> */}
             <p className="text-white z-9999 font-bold text-xl mt-4">{key}</p>
           </CardSpotlight>
