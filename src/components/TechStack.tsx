@@ -40,7 +40,7 @@ const Stack = {
   // "AWS": "https://aws.amazon.com",
   // "Heroku": "https://www.heroku.com",
   // "Netlify": "https://www.netlify.com",
-  // "Vite": "https://vitejs.dev",
+  "Vite": "https://vitejs.dev",
   // "Webpack": "https://webpack.js.org",
   // "Babel": "https://babeljs.io",
   // "ESLint": "https://eslint.org",
