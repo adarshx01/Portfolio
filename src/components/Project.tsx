@@ -42,7 +42,7 @@ const projects = [
 
 export function Project() {
   return (
-    <div id="Projects" className=" bg-gray-100">
+    <div id="Projects" className=" bg-gray-100 ">
       <HeroHighlight className="h-[50rem]  lg:h-[60rem] md:h-[60rem] sticky top-10">
         
         <motion.h1
@@ -53,7 +53,7 @@ export function Project() {
         >          <div className="py-10">
         Explore My Projects
       </div>
-      <div className="overflow-y-scroll h-[40rem]">
+      <div className="overflow-y-scroll  h-[40rem]">
           <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  gap-6 px-4 lg:px-20">
             {projects.map((project) => (
               <CardContainer className="inter-var" key={project.name}>

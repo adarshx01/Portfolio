@@ -19,7 +19,7 @@ export function ServicesOffered() {
   return (
     <div
       id="Services"
-      className="h-[200vh]   bg-black w-full dark:border dark:border-white/[0.1]  relative lg:pt-20 md:pt-24 pt-44 overflow-clip"
+      className="h-[200vh]   bg-black w-full dark:border dark:border-white/[0.1]  relative lg:pt-24 md:pt-28 pt-48 overflow-clip"
       ref={ref}
     >
       <GoogleGeminiEffect

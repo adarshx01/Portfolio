@@ -11,6 +11,8 @@ import {
 } from "@tabler/icons-react";
 import {Linkedin, Youtube,Mail } from 'lucide-react'
 import Link from "next/link";
+import { useEffect } from "react";
+import { useState } from "react";
 const links = [
   // {
   //   title: "Home",
@@ -83,10 +85,32 @@ const words = [
   },
 ];
 export function Sparkles() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+
+      if (scrollPercentage > 7) {
+        setIsVisible(false); // Hide iframe after 15% scroll
+      } else {
+        setIsVisible(true); // Show iframe if scroll is less than 15%
+      }
+    };
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
-    <div id="LandingPage" className="xl:h-[70rem] md:h-[65rem] h-[58rem]  pt-20 w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md ">
+    <div id="LandingPage" className="xl:h-[70rem] md:h-[65rem] h-[58rem]  pt-20 w-full bg-black flex flex-col items-center justify-center overflow-hidden ">
+      <iframe id="scrollingIframe" src="https://lottie.host/embed/f246727f-a499-489c-a8f5-888d373aa464/Za2g7ZJJCP.json" style={{ display: isVisible ? 'block' : 'none' }} className="fixed lg:block hidden  z-50 right-0  w-32 bottom-0"></iframe>
       <h1 className="md:text-5xl text-4xl lg:text-8xl font-bold text-center text-white relative z-20">
-        Hi!👋 I'm Adarsh
+        Hi!👋 I'm Adarsh 
       </h1>
       
       <h2 className="md:text-8xl text-6xl lg:text-9xl"><TypewriterEffectSmooth className="text-6xl"  words={words}/></h2>
