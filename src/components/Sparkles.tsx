@@ -108,7 +108,7 @@ export function Sparkles() {
   }, []);
   return (
     <div id="LandingPage" className="xl:h-[70rem] md:h-[65rem] h-[58rem]  pt-20 w-full bg-black flex flex-col items-center justify-center overflow-hidden ">
-      <iframe id="scrollingIframe" src="https://lottie.host/embed/f246727f-a499-489c-a8f5-888d373aa464/Za2g7ZJJCP.json" style={{ display: isVisible ? 'block' : 'none' }} className="fixed lg:block hidden  z-50 right-0  w-32 bottom-0"></iframe>
+      {/* <iframe id="scrollingIframe" src="https://lottie.host/embed/f246727f-a499-489c-a8f5-888d373aa464/Za2g7ZJJCP.json" style={{ display: isVisible ? 'block' : 'none' }} className="fixed lg:block hidden  z-50 right-0  w-32 bottom-0"></iframe> */}
       <h1 className="md:text-5xl text-4xl lg:text-8xl font-bold text-center text-white relative z-20">
         Hi!👋 I'm Adarsh 
       </h1>
