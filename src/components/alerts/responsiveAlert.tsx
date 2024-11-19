@@ -18,7 +18,7 @@ export default function ResponsiveAlert() {
   if (!isVisible) return null
 
   return (
-    <Alert className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 w-auto max-w-md animate-in fade-in slide-in-from-top-5 duration-300">
+    <Alert className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50 w-auto max-w-md rounded-full border-0 bg-slate-200 animate-in fade-in slide-in-from-top-5 duration-300">
       <AlertDescription className='font-semibold'>
         Scroll Down 👇
       </AlertDescription>
