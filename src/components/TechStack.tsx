@@ -53,7 +53,7 @@ const Stack = {
 export function TechStack() {
   return (
 
-    <div id="TechStack" className="flex py-20 items-center justify-center bg-black antialiased ">
+    <div id="TechStack" className="flex py-20  items-center justify-center bg-black antialiased ">
       <div className="grid grid-cols-3  md:grid-cols-5  lg:grid-cols-7 p-0 m-0 -p-24">
         {Object.keys(Stack).map((key,index) => (
           <CardSpotlight key={key} className="flex flex-col items-center justify-center p-4 m-1 w-32 h-24">
