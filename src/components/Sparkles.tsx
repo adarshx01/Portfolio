@@ -144,7 +144,7 @@ export function Sparkles() {
         />
         
         <Button variant="outline" size="icon" className=" right-44 mx-auto my-8 w-24  ">
-          <Link href="https://drive.google.com/file/d/14nQ2HaCXC2EUNkp38FtIWWTPw3EHTDoq/view?usp=sharing" className="flex"><p>Resume</p><ChevronRight className="h-4 w-4 mt-0.5" /></Link>
+          <Link href="https://drive.google.com/file/d/1-Mn51mfR54tipw1ZqaVDe1n0BMFn9DkR/view?usp=sharing" className="flex"><p>Resume</p><ChevronRight className="h-4 w-4 mt-0.5" /></Link>
         </Button>
       </div>
     </div>
