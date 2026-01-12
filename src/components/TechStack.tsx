@@ -37,7 +37,7 @@ const Stack = {
   "Scikit-learn": "https://scikit-learn.org",
   // "OpenCV": "https://opencv.org",
   // "GCP": "https://cloud.google.com",
-  // "AWS": "https://aws.amazon.com",
+  "AWS": "https://aws.amazon.com",
   // "Heroku": "https://www.heroku.com",
   // "Netlify": "https://www.netlify.com",
   "Vite": "https://vitejs.dev",
