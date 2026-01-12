@@ -14,7 +14,7 @@ export default function Footer() {
             <span className="text-xl font-bold">Adarsh Vishwakarma</span>
           </Link>
           <p className="text-muted-foreground max-w-[300px]">
-            Welcome to my portfolio website, showcasing my design and development work.
+            Welcome to my portfolio website, showcasing my portfolio and development work.
           </p>
         </div>
         <nav className="grid grid-cols-2 md:grid-cols-3 gap-4">
